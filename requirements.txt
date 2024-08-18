@@ -1,0 +1,10 @@
+barfi==0.7.0
+beautifulsoup4==4.12.3
+openai==1.41.0
+pandas==2.2.2
+PyPDF2==3.0.1
+python-dotenv==1.0.1
+python_docx==1.1.2
+Requests==2.32.3
+streamlit==1.36.0
+streamlit_navigation_bar==3.3.0
