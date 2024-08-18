@@ -174,12 +174,15 @@ def input_url_funct(self):
     url = self.get_option(name='input-url')
     
     response = requests.get(url)
-    
-    soup = BeautifulSoup(response.text, 'html.parser')
 
-    text = soup.get_text()
+    # Check if the request was successful
+    if response.status_code == 200:
+        soup = BeautifulSoup(response.content, 'html.parser')
+        all_text = soup.get_text(separator='\n', strip=True)
+    else:
+        all_text = 'Scraper failed.'
     
-    self.set_interface(name='text', value = text[:500])
+    self.set_interface(name='text', value = all_text[:1000])
     
 input_url_block.add_compute(input_url_funct)
 
