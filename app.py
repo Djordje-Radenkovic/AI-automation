@@ -1,7 +1,6 @@
 # option types: checkbox, input, integer, number, select, slider, display
-# implement: replace, split, custom python
+# implement: custom python, filter and combine text, export file, connect with Google drive services
 # display intermediate results
-# requirements
 
 # import libraries
 from barfi import Block, st_barfi, barfi_schemas
