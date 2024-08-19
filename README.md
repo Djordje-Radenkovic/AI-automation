@@ -9,6 +9,10 @@ Flow-based programming implemented using streamlit's barfi:
 To run:
 1. Clone repo locally
 2. Navigate to root directory
-3. Run:
+3. Install requirements
+```bash
+pip install -r requirements.txt
+```
+4. Run:
 ```bash
 streamlit run app.py
